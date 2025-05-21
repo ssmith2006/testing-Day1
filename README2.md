@@ -14,8 +14,8 @@
 
 
 ## Install Testing Dependencies
---Enter: 
---- npm install --save-dev vitest @testing-library/react @testing-library/jest-dom jsdom in your terminal.
+* Enter: 
+    * npm install --save-dev vitest @testing-library/react @testing-library/jest-dom jsdom in your terminal.
 
---Configure your testing framework
---- update your existing configuration file:
+* Configure your testing framework
+    *update your existing configuration file:
