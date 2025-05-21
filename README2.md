@@ -20,11 +20,26 @@
 * Configure your testing framework
     * update your existing configuration file:
         * import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react'; 
-export default defineConfig({
-    plugins: [react()],
-    test: {
-        environment: 'jsdom',
-        globals: true
+        import react from '@vitejs/plugin-react'; 
+        export default defineConfig({
+            plugins: [react()],
+            test: {
+                environment: 'jsdom',
+                globals: true
+                }
+                });
+
+* Update your scripts in package.json:
+    * Your test script should resemble this:
+        * "scripts": {
+            "dev": "vite",
+            "build": "vite build",
+            preview": "vite preview",
+            "test": "vitest"
         }
-        });
+
+## Testing Your Code
+* Enter npm test, or npm run test, in your terminal.
+    * Successful testing will appear in green within the terminal.
+
+Good Luck!
